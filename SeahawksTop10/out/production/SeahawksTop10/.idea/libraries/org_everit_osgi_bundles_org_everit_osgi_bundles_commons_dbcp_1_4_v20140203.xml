@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="org.everit.osgi.bundles:org.everit.osgi.bundles.commons-dbcp:1.4-v20140203" type="repository">
+    <properties maven-id="org.everit.osgi.bundles:org.everit.osgi.bundles.commons-dbcp:1.4-v20140203" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/org.everit.osgi.bundles.commons-dbcp-1.4-v20140203.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-pool-1.5.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

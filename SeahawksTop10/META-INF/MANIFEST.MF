@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: commons-net-1.4.1.jar commons-pool-1.2.jar commons-dbcp-1.
+ 2.1.jar derby.jar commons-collections-3.1.jar
+Main-Class: com.tompa.top10.uicode.MainPanel
+
