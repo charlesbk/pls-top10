@@ -71,7 +71,7 @@ public class TopTenGroup {
 
    public static StringBuilder htmlGenderCourseGroup(String gender, String course, String ageGroup, String seasonRed) {
       StringBuilder ret = new StringBuilder();
-      String queryDistance = "select distinct(distance) from top10 where gender=? and course=? and agegroup=? order by distance";
+      String queryDistance = "select distinct(distance) from top10 where gender=? and course=? and agegroup=? order by distance * 1";
       ArrayList distance = ExecuteStatement.executeQuery(queryDistance, new String[]{gender, course, ageGroup});
       String title = SwimFormatter.genderCourseGroup(gender, course, ageGroup);
       ret.append(SwimFormatter.htmlFormatTopPage(title));
