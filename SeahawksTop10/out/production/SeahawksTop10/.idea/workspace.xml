@@ -12,8 +12,10 @@
     <list default="true" id="fe80b116-534b-4f8f-9d71-4c99664c920b" name="Default Changelist" comment="reordering distances correctly">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeahawksTop10/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeahawksTop10/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeahawksTop10/derby.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/db.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/log/log.ctrl" afterDir="false" />
@@ -192,7 +194,6 @@
     </configuration>
     <configuration name="MainPanel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.tompa.top10.uicode.MainPanel" />
       <module name="SeahawksTop10" />
       <extension name="coverage">

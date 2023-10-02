@@ -10,23 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe80b116-534b-4f8f-9d71-4c99664c920b" name="Default Changelist" comment="reordering distances correctly">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeahawksTop10/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeahawksTop10/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeahawksTop10/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/db.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/log/log217.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/log/log218.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/log/log219.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/log/log220.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/log/log221.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/log/log221.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/seg0/c490.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/seg0/c490.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/seg0/c4b0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeahawksTop10/firstDB/seg0/c4b0.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,9 +74,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1981" />
     <option name="y" value="39" />
@@ -157,6 +141,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/kim/Dropbox/PLS Web Work/PLS Top 10/pls-top10/SeahawksTop10",
