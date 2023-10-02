@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Sat Sep 30 15:23:39 PDT 2023:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-018a-e830-b10f-00003effd4f0 
+Sun Oct 01 14:38:32 PDT 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-018a-ed2d-bacf-00003efd2cd0 
 on database directory /Users/kim/Dropbox/PLS Web Work/PLS Top 10/pls-top10 v2 with huili updates/SeahawksTop10/firstDB with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd 
 Loaded from file:/Users/kim/Dropbox/PLS%20Web%20Work/PLS%20Top%2010/pls-top10%20v2%20with%20huili%20updates/SeahawksTop10/lib/derby-10.10.2.0.jar
 java.vendor=Eclipse Foundation
