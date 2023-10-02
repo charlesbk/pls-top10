@@ -124,20 +124,27 @@ public class SD3Loader {
             ArrayList rec = (ArrayList)iter1.next();
             loadMeet1.insertRow(rec);
          }
-      } finally {
+      } catch (IOException e) {
+         System.out.println("e: " + e.getMessage());
+      }
+      finally {
          try {
             bufferedReader.close();
          } catch (IOException var28) {
+            System.out.println("var28: " + var28.getMessage());
             ;
          } catch (Exception var29) {
+            System.out.println("var29: " + var29.getMessage());
             ;
          }
 
          try {
             fileReader.close();
          } catch (IOException var26) {
+            System.out.println("var26: " + var26.getMessage());
             ;
          } catch (Exception var27) {
+            System.out.println("var27: " + var27.getMessage());
             ;
          }
 

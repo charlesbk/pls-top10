@@ -323,8 +323,8 @@ public class SwimFormatter {
 
       return age;
    }
-
-   public static int computeAgeMMDDYYYY(int ageUpDate, String ussid) {
+   // This block is for old id like : 081610DYLBKIAUSA0816201011M
+   /*public static int computeAgeMMDDYYYY(int ageUpDate, String ussid) {
       int yy = Integer.parseInt(ussid.substring(4, 8));
       int mm = Integer.parseInt(ussid.substring(0, 2));
       int dd = Integer.parseInt(ussid.substring(2, 4));
@@ -335,6 +335,27 @@ public class SwimFormatter {
       int yy = Integer.parseInt(ussid.substring(4, 6));
       int mm = Integer.parseInt(ussid.substring(0, 2));
       int dd = Integer.parseInt(ussid.substring(2, 4));
+      if(yy < 50) {
+         yy += 2000;
+      } else {
+         yy += 1900;
+      }
+
+      return computeAge(ageUpDate, yy, mm, dd);
+   }*/
+   //446498A2FA27AUSA0816201012M
+   // This block is for new id like : 446498A2FA27AUSA0816201012M
+   public static int computeAgeMMDDYYYY(int ageUpDate, String dob) {
+      int yyyy = Integer.parseInt(dob.substring(4, 8));
+      int mm = Integer.parseInt(dob.substring(0, 2));
+      int dd = Integer.parseInt(dob.substring(2, 4));
+      return computeAge(ageUpDate, yyyy, mm, dd);
+   }
+
+   public static int computeAgeMMDDYY(int ageUpDate, String ussid, String dob) {
+      int yy = Integer.parseInt(dob.substring(6, 8));
+      int mm = Integer.parseInt(dob.substring(0, 2));
+      int dd = Integer.parseInt(dob.substring(2, 4));
       if(yy < 50) {
          yy += 2000;
       } else {

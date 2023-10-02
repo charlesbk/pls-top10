@@ -1,13 +1,13 @@
 ----------------------------------------------------------------
-Sat Aug 31 14:32:42 GMT-08:00 2019:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-016c-e9cf-24f6-000004d79948 
-on database directory /Users/kim/Dropbox/PLS Web Work/PLS Top 10/SeahawksTop10 Java Decompiled/SeahawksTop10/firstDB with class loader sun.misc.Launcher$AppClassLoader@7987aeca 
-Loaded from file:/Users/kim/Dropbox/PLS%20Web%20Work/PLS%20Top%2010/SeahawksTop10%20Java%20Decompiled/SeahawksTop10/lib/derby-10.10.2.0.jar
-java.vendor=Apple Inc.
-java.runtime.version=1.6.0_65-b14-468
-user.dir=/Users/kim/Dropbox/PLS Web Work/PLS Top 10/SeahawksTop10 Java Decompiled/SeahawksTop10
+Sat Sep 30 15:23:39 PDT 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-018a-e830-b10f-00003effd4f0 
+on database directory /Users/kim/Dropbox/PLS Web Work/PLS Top 10/pls-top10 v2 with huili updates/SeahawksTop10/firstDB with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@77556fd 
+Loaded from file:/Users/kim/Dropbox/PLS%20Web%20Work/PLS%20Top%2010/pls-top10%20v2%20with%20huili%20updates/SeahawksTop10/lib/derby-10.10.2.0.jar
+java.vendor=Eclipse Foundation
+java.runtime.version=11.0.12+7
+user.dir=/Users/kim/Dropbox/PLS Web Work/PLS Top 10/pls-top10 v2 with huili updates/SeahawksTop10
 os.name=Mac OS X
 os.arch=x86_64
-os.version=10.13.6
+os.version=11.5
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''

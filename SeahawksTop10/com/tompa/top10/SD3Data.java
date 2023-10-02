@@ -112,7 +112,7 @@ public class SD3Data {
   public void parseIndividualTimeRecord(String ussid, String line, String nameOnRoster) {
     String dob = extract(line, 56, 8);
     int reportedAge = Integer.parseInt(extract(line, 64, 2));
-    int computedAge = SwimFormatter.computeAgeMMDDYY(this.meetRecord.getStartDate(), ussid);
+    int computedAge = SwimFormatter.computeAgeMMDDYY(this.meetRecord.getStartDate(), ussid, dob);
     if (reportedAge != computedAge) {
       System.out.println("INVALID AGE for: ".concat(ussid));
     }

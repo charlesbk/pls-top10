@@ -9,12 +9,7 @@ import com.tompa.top10.SwimmerTopTenGroups;
 import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Collections;
-import java.util.Formatter;
-import java.util.HashMap;
-import java.util.Iterator;
+import java.util.*;
 
 public class TopTenGroup {
 
@@ -40,6 +35,7 @@ public class TopTenGroup {
          int pos = 0;
          String lastSeconds = "";
          Iterator i$ = ten.iterator();
+         ArrayList fullNames = new ArrayList<String>();
 
          while(i$.hasNext()) {
             ArrayList row = (ArrayList)i$.next();
@@ -49,6 +45,7 @@ public class TopTenGroup {
             String yyyymmdd = (String)row.get(3);
             String ussid = (String)row.get(4);
             if(pos < 10 || sec.equals(lastSeconds)) {
+               if(fullNames.contains(name)) continue;
                ++pos;
                StringBuilder tableRow = SwimFormatter.htmlFormatRow(pos, name, sec, season, seasonRed, (String)null, yyyymmdd);
                groupOfTen.addResult(new SwimmerResult(name, sec, season, yyyymmdd));
@@ -61,6 +58,7 @@ public class TopTenGroup {
                sttg.addGroup(groupOfTen);
                ret.append(tableRow);
                lastSeconds = sec;
+               fullNames.add(name);
             }
          }
 
@@ -172,6 +170,9 @@ public class TopTenGroup {
       if(ten.size() < 1) {
          return ret;
       } else {
+
+         Set<String> names = new HashSet<String>();
+
          String title = SwimFormatter.genderCourseGroupDistanceStroke(gender, course, ageGroup, distance, stroke);
          ret.append(SwimFormatter.tabFormatTopPage(title));
          int pos = 0;
@@ -186,11 +187,12 @@ public class TopTenGroup {
             String id = (String)row.get(3);
             String date = (String)row.get(4);
             String meet = (String)row.get(5);
-            if(pos < 10 || sec.equals(lastSeconds)) {
+            if(!names.contains(name) && (pos < 10 || sec.equals(lastSeconds))) {
                ++pos;
                StringBuilder tableRow = SwimFormatter.tabFormatRow(pos, name, sec, season, id, date, meet);
                ret.append(tableRow);
                lastSeconds = sec;
+               names.add(name);
             }
          }
 
@@ -239,6 +241,9 @@ public class TopTenGroup {
       ArrayList ret = new ArrayList();
       String query = "select name, timesec, season from top10 where gender=? and course=? and agegroup=? and distance=? and stroke=? order by timesec, season";
       ArrayList ten = ExecuteStatement.executeQuery(query, new String[]{gender, course, ageGroup, distance, stroke});
+
+      Set<String> names = new HashSet<String>();
+
       if(ten.size() < 1) {
          return ret;
       } else {
@@ -253,13 +258,16 @@ public class TopTenGroup {
          while(i$.hasNext()) {
             ArrayList row = (ArrayList)i$.next();
             String name = (String)row.get(0);
+
             String sec = (String)row.get(1);
             String season = (String)row.get(2);
-            if(pos < 10 || sec.equals(lastSeconds)) {
+
+            if(!names.contains(name) && (pos < 10 || sec.equals(lastSeconds))) {
                ++pos;
                StringBuilder tableRow = SwimFormatter.printableFormatRow(pos, name, sec, season);
                ret.add(tableRow.toString());
                lastSeconds = sec;
+               names.add(name);
             }
          }
 

@@ -17,6 +17,7 @@ import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import javax.swing.Icon;
 import javax.swing.JButton;
@@ -330,6 +331,30 @@ public class MainPanel {
             filter.addExtension("cl2");
             filter.setDescription("Meet results files");
             chooser.setFileFilter(filter);
+            try {
+               MainPanel.this.mainPanel.setCursor(Cursor.getPredefinedCursor(3));
+               SD3Loader sd3Loader = new SD3Loader();
+               //String folderOfCl2Files = "~/Documents/Dev/seaHawk/python/SD3_zip_files";
+               String folderOfCl2Files = "/Users/huili.wang/Documents/Dev/seaHawk/python/SD3_zip_files";
+               File dir = new File(folderOfCl2Files);
+               File[] directoryListing = dir.listFiles();
+               if (directoryListing != null) {
+                  for (File file : directoryListing) {
+                     sd3Loader.loadTeamTimes(file.getPath(), "PCPLS");
+                     TopTenUpdater topTenUpdater = new TopTenUpdater();
+                     topTenUpdater.updateFromDatabase(sd3Loader.getMeetDate(), sd3Loader.getMeetName());
+                  }
+               }
+               MainPanel.this.textArea.setText("Applied");
+               MainPanel.this.textArea.setCaretPosition(0);
+            } catch (IOException var7) {
+               MainPanel.this.textArea.setText(var7.getMessage());
+               var7.printStackTrace();
+            }
+            MainPanel.this.mainPanel.setCursor((Cursor)null);
+
+            // the following block is the original lines --Huili
+            /*
             int returnVal = chooser.showOpenDialog(MainPanel.this.mainPanel);
             if(returnVal == 0) {
                MainPanel.this.mainPanel.setCursor(Cursor.getPredefinedCursor(3));
@@ -348,7 +373,7 @@ public class MainPanel {
                }
 
                MainPanel.this.mainPanel.setCursor((Cursor)null);
-            }
+            }*/
 
          }
       });

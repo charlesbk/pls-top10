@@ -24,6 +24,9 @@ public class LoadRoster {
    public String getRoster() {
       StringBuilder ret = new StringBuilder();
       String queryAll = "select ussreg, dob, gender, lastname, firstname from roster order by lastname, firstname";
+      //Pool.writeToLogFile("queryAll");
+      //return queryAll;
+
       ArrayList all = ExecuteStatement.executeQuery(queryAll, new String[0]);
       Iterator i$ = all.iterator();
 
@@ -173,7 +176,10 @@ public class LoadRoster {
                gender = line.substring(65, 66);
             } else if(line.startsWith("D3")) {
                String id = line.substring(2, 16).trim();
+               //int idLength = 12;
+               //String id = line.substring(2, 2+idLength).trim(); // Huili Wang changed it to 14 for removing the variant
                if(dob.length() == 8 && id.length() == 14) {
+               //if(dob.length() == 8 && id.length() == idLength) {
                   hy3 = String.format("D1%s%25s%20s%20s%15s%13s", new Object[]{gender, last, first, "", id, dob});
                   this.insertHY3Line(hy3);
                }

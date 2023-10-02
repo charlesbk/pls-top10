@@ -185,7 +185,7 @@ public class TopTenUpdater {
 
    public boolean insertManually(int meetDate, String meetName, String course, String gender, String ussid, String name, String distance, String stroke, double timesec) {
       this.clearUpdates();
-      int age = SwimFormatter.computeAgeMMDDYY(meetDate, ussid);
+      int age = SwimFormatter.computeAgeMMDDYY(meetDate, ussid, "01/01/2000"); // "01/01/2000" is default. This insertManually function cannot be used at the new id -- Huili
       String agegroup = SwimFormatter.toAgeGroup(age);
       String season = String.valueOf(SwimFormatter.computeSeason(meetDate));
       this.applyResult(meetDate, meetName, course, gender, agegroup, distance, stroke, name.toUpperCase(), season, ussid, timesec);
